@@ -36,6 +36,15 @@ By default Artillery will open a new connection for each new virtual user. To op
 
 This can be useful to emulate the conditions when the target would normally be behind a load-balancer and would have a fixed number of connections established at any given time.
 
+HTTP Basic Auth
+###############
+::
+
+  get:
+    url: "/protected"
+    auth:
+      user: hassy
+      pass: secret
 
 Actions
 #######
